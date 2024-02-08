@@ -26,9 +26,10 @@ body {
 
 .footer {
   grid-column: 2/3;
-  grid-row: 1/-1;
+  grid-row: 1/4;
   display: flex;
   justify-content: flex-end;
+  align-self: end;
 }
 
 .footer-text {
@@ -58,10 +59,44 @@ body {
   font-weight: 200 900;
   font-stretch: 75% 125%;
 }
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.menu-button {
+  color: #16161d;
+  border: none;
+  background-color: #dadada;
+  text-align: left;
+  cursor: pointer;
+}
+
+.MuiMenu-list {
+  font-family: "Mona Sans";
+  color: #16161d;
+  background-color: #dadada;
+  font-size: 12px;
+}
+
+@font-face {
+  font-family: "Mona Sans";
+  src: url("Mona-Sans.woff2") format("woff2 supports variations"), url("Mona-Sans.woff2") format("woff2-variations");
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+@font-face {
+  font-family: "Hubot Sans";
+  src: url("Hubot-Sans.woff2") format("woff2 supports variations"), url("Hubot-Sans.woff2") format("woff2-variations");
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
 .layout {
   display: grid;
   grid-template-columns: 90% 10%;
-  grid-template-rows: 10% 90%;
+  grid-template-rows: 10% 80% 10%;
   background-color: #dadada;
   margin: 3rem;
   padding: 1rem;
