@@ -1,3 +1,18 @@
+$breakpoints: (
+  "small": (
+    min-width: 300px,
+  ),
+  "medium": (
+    min-width: 481px,
+  ),
+  "large": (
+    min-width: 781px,
+  ),
+  "huge": (
+    min-width: 1025px,
+  ),
+);
+
 $primary-color: #111;
 $secondary-color: #555;
 $tetriary-color: #fff;
