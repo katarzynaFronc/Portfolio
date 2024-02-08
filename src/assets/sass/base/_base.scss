@@ -1,5 +1,14 @@
 @import "../utilities/variables";
 
-html {
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
   font-family: $secndary-font;
+  width: 100%;
+  min-height: 100%;
+  color: $color-dark;
+  background-color: $secondary-color;
 }

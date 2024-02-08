@@ -11,8 +11,63 @@
   font-weight: 200 900;
   font-stretch: 75% 125%;
 }
-html {
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
   font-family: "Hubot Sans";
+  width: 100%;
+  min-height: 100%;
+  color: #16161d;
+  background-color: #cdcdcd;
+}
+
+.footer {
+  grid-column: 2/3;
+  grid-row: 1/-1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: right;
+  font-size: 0.75rem;
+}
+
+.header {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+@font-face {
+  font-family: "Mona Sans";
+  src: url("Mona-Sans.woff2") format("woff2 supports variations"), url("Mona-Sans.woff2") format("woff2-variations");
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+@font-face {
+  font-family: "Hubot Sans";
+  src: url("Hubot-Sans.woff2") format("woff2 supports variations"), url("Hubot-Sans.woff2") format("woff2-variations");
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+.layout {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  grid-template-rows: 10% 90%;
+  background-color: #dadada;
+  margin: 3rem;
+  padding: 1rem;
+  min-height: 85vh;
+  box-shadow: 5px 5px 15px 5px #c0c0c0;
+  align-items: center;
 }
 
 @font-face {

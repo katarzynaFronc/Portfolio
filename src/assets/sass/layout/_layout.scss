@@ -1,0 +1,13 @@
+@import "../utilities/variables";
+
+.layout {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  grid-template-rows: 10% 90%;
+  background-color: $primary-color;
+  margin: 3rem;
+  padding: 1rem;
+  min-height: 85vh;
+  box-shadow: 5px 5px 15px 5px $tetriary-color;
+  align-items: center;
+}

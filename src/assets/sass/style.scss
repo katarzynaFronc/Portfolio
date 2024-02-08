@@ -2,5 +2,12 @@
 
 @import "./base/base";
 
+@import "./components/footer";
+@import "./components/header";
+
+@import "./layout/layout";
+
+@import "./pages/main";
+
 @import "./utilities/variables";
 @import "./utilities/mixins";
