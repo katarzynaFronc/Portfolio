@@ -1,23 +1,11 @@
 @import "../../../node_modules/reset-css/reset.css";
-@font-face {
-  font-family: "Mona Sans";
-  src: url("Mona-Sans.woff2") format("woff2 supports variations"), url("Mona-Sans.woff2") format("woff2-variations");
-  font-weight: 200 900;
-  font-stretch: 75% 125%;
-}
-@font-face {
-  font-family: "Hubot Sans";
-  src: url("Hubot-Sans.woff2") format("woff2 supports variations"), url("Hubot-Sans.woff2") format("woff2-variations");
-  font-weight: 200 900;
-  font-stretch: 75% 125%;
-}
 * {
   box-sizing: border-box;
 }
 
 html,
 body {
-  font-family: "Hubot Sans";
+  font-family: "Montserrat Subrayada", sans-serif;
   width: 100%;
   min-height: 100%;
   color: #16161d;
@@ -47,18 +35,11 @@ body {
   grid-row: 1/2;
 }
 
-@font-face {
-  font-family: "Mona Sans";
-  src: url("Mona-Sans.woff2") format("woff2 supports variations"), url("Mona-Sans.woff2") format("woff2-variations");
-  font-weight: 200 900;
-  font-stretch: 75% 125%;
+.header-a {
+  text-decoration: none;
+  color: #16161d;
 }
-@font-face {
-  font-family: "Hubot Sans";
-  src: url("Hubot-Sans.woff2") format("woff2 supports variations"), url("Hubot-Sans.woff2") format("woff2-variations");
-  font-weight: 200 900;
-  font-stretch: 75% 125%;
-}
+
 .menu-container {
   display: flex;
   flex-direction: column;
@@ -75,24 +56,12 @@ body {
 }
 
 .MuiMenu-list {
-  font-family: "Mona Sans";
+  font-family: "Montserrat", sans-serif;
   color: #16161d;
   background-color: #dadada;
   font-size: 12px;
 }
 
-@font-face {
-  font-family: "Mona Sans";
-  src: url("Mona-Sans.woff2") format("woff2 supports variations"), url("Mona-Sans.woff2") format("woff2-variations");
-  font-weight: 200 900;
-  font-stretch: 75% 125%;
-}
-@font-face {
-  font-family: "Hubot Sans";
-  src: url("Hubot-Sans.woff2") format("woff2 supports variations"), url("Hubot-Sans.woff2") format("woff2-variations");
-  font-weight: 200 900;
-  font-stretch: 75% 125%;
-}
 .layout {
   display: grid;
   grid-template-columns: 90% 10%;
@@ -104,17 +73,4 @@ body {
   box-shadow: 5px 5px 15px 5px #c0c0c0;
   align-items: center;
   border-radius: 0.5rem;
-}
-
-@font-face {
-  font-family: "Mona Sans";
-  src: url("Mona-Sans.woff2") format("woff2 supports variations"), url("Mona-Sans.woff2") format("woff2-variations");
-  font-weight: 200 900;
-  font-stretch: 75% 125%;
-}
-@font-face {
-  font-family: "Hubot Sans";
-  src: url("Hubot-Sans.woff2") format("woff2 supports variations"), url("Hubot-Sans.woff2") format("woff2-variations");
-  font-weight: 200 900;
-  font-stretch: 75% 125%;
 }/*# sourceMappingURL=style.css.map */

@@ -1,36 +1,26 @@
-export interface ProjectsProps {
-  value: string;
-  name: string;
-}
-
-const projects = [
-  {
-    value: "Project 1",
-    name: "Project 1",
-  },
-  {
-    value: "Project 2",
-    name: "Project 2",
-  },
-  {
-    value: "Project 3",
-    name: "Project 3",
-  },
-];
-
-import "../assets/sass/style.css";
 import * as React from "react";
-
+import "../assets/sass/style.css";
 import { CustomButton } from "./CustomButton.component";
 import { CustomMenu, CustomMenuItem } from "./CustomMenu.component";
+import { useNavigate } from "react-router-dom";
+import projects from "../api/db.json";
 
 export default function Navigation() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
+  const navigate = useNavigate();
+
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
   };
+
   const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const handleMenuClose = (projectId: number) => {
+    const project = projects.find((p) => p.id === projectId);
+    navigate(`/projectPage/${projectId}`, { state: { project } });
     setAnchorEl(null);
   };
 
@@ -48,7 +38,7 @@ export default function Navigation() {
           "aria-labelledby": "basic-button",
         }}>
         {projects.map((project) => (
-          <CustomMenuItem key={project.value} value={project.value} onClick={handleClose}>
+          <CustomMenuItem key={project.id} value={project.id} onClick={() => handleMenuClose(project.id)}>
             {project.name}
           </CustomMenuItem>
         ))}

@@ -5,7 +5,7 @@ export const CustomButton = styled(Button)<ButtonProps>(() => ({
   justifyContent: "flex-start",
   textTransform: "capitalize",
   textAlign: "left",
-  fontFamily: "Mona Sans",
+  fontFamily: "Montserrat",
   fontSize: "1rem",
   fontWeight: "400",
   height: "1.5rem",

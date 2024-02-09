@@ -19,19 +19,5 @@ $tetriary-color: #c0c0c0;
 $color-light: #fff;
 $color-dark: #16161d;
 
-@font-face {
-  font-family: "Mona Sans";
-  src: url("Mona-Sans.woff2") format("woff2 supports variations"), url("Mona-Sans.woff2") format("woff2-variations");
-  font-weight: 200 900;
-  font-stretch: 75% 125%;
-}
-
-@font-face {
-  font-family: "Hubot Sans";
-  src: url("Hubot-Sans.woff2") format("woff2 supports variations"), url("Hubot-Sans.woff2") format("woff2-variations");
-  font-weight: 200 900;
-  font-stretch: 75% 125%;
-}
-
-$primary-font: "Mona Sans";
-$secndary-font: "Hubot Sans";
+$primary-font: "Montserrat", sans-serif;
+$secndary-font: "Montserrat Subrayada", sans-serif;
