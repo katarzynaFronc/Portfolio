@@ -103,6 +103,7 @@ body {
   min-height: 85vh;
   box-shadow: 5px 5px 15px 5px #c0c0c0;
   align-items: center;
+  border-radius: 0.5rem;
 }
 
 @font-face {

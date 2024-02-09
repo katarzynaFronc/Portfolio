@@ -20,10 +20,9 @@ const projects = [
 
 import "../assets/sass/style.css";
 import * as React from "react";
-import Menu from "@mui/material/Menu";
 
 import { CustomButton } from "./CustomButton.component";
-import { CustomMenuItem } from "./CustomMenu.component";
+import { CustomMenu, CustomMenuItem } from "./CustomMenu.component";
 
 export default function Navigation() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -41,7 +40,7 @@ export default function Navigation() {
       <CustomButton aria-controls={open ? "basic-menu" : undefined} aria-haspopup="true" aria-expanded={open ? "true" : undefined} onClick={handleClick}>
         Projects
       </CustomButton>
-      <Menu
+      <CustomMenu
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
@@ -53,7 +52,7 @@ export default function Navigation() {
             {project.name}
           </CustomMenuItem>
         ))}
-      </Menu>
+      </CustomMenu>
       <CustomButton>Contact</CustomButton>
     </div>
   );

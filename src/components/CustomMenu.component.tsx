@@ -1,6 +1,13 @@
-import { MenuItem, MenuItemProps, styled } from "@mui/material";
+import { Menu, MenuItem, MenuItemProps, MenuProps, styled } from "@mui/material";
 
 export const CustomMenuItem = styled(MenuItem)<MenuItemProps>(() => ({
   fontFamily: "Mona Sans",
-  fontWeight: "400",
+  paddingTop: "0",
+  paddingBottom: "0",
+  minHeight: "1.5rem",
+}));
+
+export const CustomMenu = styled(Menu)<MenuProps>(() => ({
+  left: "100px",
+  top: "-65px",
 }));
