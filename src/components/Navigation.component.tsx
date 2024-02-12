@@ -22,7 +22,9 @@ export default function Navigation() {
     const project = projects.find((p) => p.id === projectId);
     navigate(`/projectPage/${projectId}`, { state: { project } });
     setAnchorEl(null);
-    document.body.scrollTo(0, 0);
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0);
   };
 
   return (
