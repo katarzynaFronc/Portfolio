@@ -22,6 +22,7 @@ export default function Navigation() {
     const project = projects.find((p) => p.id === projectId);
     navigate(`/projectPage/${projectId}`, { state: { project } });
     setAnchorEl(null);
+    document.body.scrollTo(0, 0);
   };
 
   return (
@@ -33,7 +34,7 @@ export default function Navigation() {
       <CustomMenu
         anchorEl={anchorEl}
         open={open}
-        onClose={handleClose}
+        onClick={handleClose}
         MenuListProps={{
           "aria-labelledby": "basic-button",
         }}>

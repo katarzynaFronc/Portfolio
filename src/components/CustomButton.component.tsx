@@ -3,10 +3,8 @@ import { Button, ButtonProps, styled } from "@mui/material";
 export const CustomButton = styled(Button)<ButtonProps>(() => ({
   color: "#16161d",
   justifyContent: "flex-start",
-  textTransform: "capitalize",
   textAlign: "left",
-  fontFamily: "Montserrat",
-  fontSize: "1rem",
+  fontFamily: "Montserrat Subrayada",
   fontWeight: "400",
   height: "1.5rem",
   "&:hover": {

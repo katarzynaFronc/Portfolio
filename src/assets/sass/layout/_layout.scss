@@ -3,12 +3,22 @@
 .layout {
   display: grid;
   grid-template-columns: 90% 10%;
-  grid-template-rows: 10% 80% 10%;
+  grid-template-rows: 6rem auto 6rem;
   background-color: $primary-color;
   margin: 3rem;
-  padding: 1rem;
+  padding: 1rem 0.2rem 1rem 1rem;
   min-height: 85vh;
   box-shadow: 5px 5px 15px 5px $tetriary-color;
   align-items: center;
   border-radius: 0.5rem;
+
+  @include respond-to("large") {
+    grid-template-columns: 95% 5%;
+  }
+}
+
+.children {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  align-self: baseline;
 }

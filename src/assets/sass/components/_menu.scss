@@ -1,6 +1,8 @@
 @import "../utilities/variables";
 
 .menu-container {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
   display: flex;
   flex-direction: column;
   width: max-content;
@@ -15,8 +17,11 @@
 }
 
 .MuiMenu-list {
-  font-family: $primary-font;
   color: $color-dark;
   background-color: $primary-color;
-  font-size: 12px;
+  font-size: 0.5rem;
+}
+
+.MuiPopover-root {
+  min-height: auto;
 }

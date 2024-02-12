@@ -1,7 +1,9 @@
 @import "../utilities/variables";
+@import "../utilities/mixins";
 
 * {
   box-sizing: border-box;
+  min-height: min-content;
 }
 
 html,
@@ -11,4 +13,28 @@ body {
   min-height: 100%;
   color: $color-dark;
   background-color: $secondary-color;
+  overflow: auto;
+}
+
+h1 {
+  font-size: 1.4rem;
+  @include respond-to("large") {
+    font-size: 2rem;
+  }
+}
+
+h2 {
+  font-size: 1.2rem;
+  @include respond-to("large") {
+    font-size: 1.625rem;
+  }
+}
+
+h3 {
+  font-family: $secndary-font;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  @include respond-to("large") {
+    font-size: 1.2rem;
+  }
 }

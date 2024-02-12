@@ -1,6 +1,8 @@
 @import "../../../node_modules/reset-css/reset.css";
 * {
   box-sizing: border-box;
+  min-height: -moz-min-content;
+  min-height: min-content;
 }
 
 html,
@@ -10,6 +12,36 @@ body {
   min-height: 100%;
   color: #16161d;
   background-color: #cdcdcd;
+  overflow: auto;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+@media (min-width: 781px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+@media (min-width: 781px) {
+  h2 {
+    font-size: 1.625rem;
+  }
+}
+
+h3 {
+  font-family: "Montserrat Subrayada", sans-serif;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+@media (min-width: 781px) {
+  h3 {
+    font-size: 1.2rem;
+  }
 }
 
 .footer {
@@ -41,6 +73,8 @@ body {
 }
 
 .menu-container {
+  grid-column: 1/2;
+  grid-row: 3/4;
   display: flex;
   flex-direction: column;
   width: -moz-max-content;
@@ -56,21 +90,87 @@ body {
 }
 
 .MuiMenu-list {
-  font-family: "Montserrat", sans-serif;
   color: #16161d;
   background-color: #dadada;
-  font-size: 12px;
+  font-size: 0.5rem;
+}
+
+.MuiPopover-root {
+  min-height: auto;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+@media (min-width: 781px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content min-content 10fr;
+    gap: 1rem 2rem;
+    margin: 1rem 2rem;
+  }
+}
+
+.project-name {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin: 1.5rem 0;
+}
+
+.project-image-container {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  margin-bottom: 1rem;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.project-link-container {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-description {
+  grid-column: 1/2;
+  grid-row: 2/4;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  padding: 1rem 0;
+}
+@media (min-width: 781px) {
+  .project-description {
+    font-size: 1rem;
+  }
 }
 
 .layout {
   display: grid;
   grid-template-columns: 90% 10%;
-  grid-template-rows: 10% 80% 10%;
+  grid-template-rows: 6rem auto 6rem;
   background-color: #dadada;
   margin: 3rem;
-  padding: 1rem;
+  padding: 1rem 0.2rem 1rem 1rem;
   min-height: 85vh;
   box-shadow: 5px 5px 15px 5px #c0c0c0;
   align-items: center;
   border-radius: 0.5rem;
+}
+@media (min-width: 781px) {
+  .layout {
+    grid-template-columns: 95% 5%;
+  }
+}
+
+.children {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  align-self: baseline;
 }/*# sourceMappingURL=style.css.map */
