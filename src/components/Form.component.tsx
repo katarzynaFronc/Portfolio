@@ -1,5 +1,7 @@
 import emailjs from "@emailjs/browser";
+import { FormControl, FormHelperText, Input, InputLabel, TextField } from "@mui/material";
 import { useRef, useState } from "react";
+import { CustomButton } from "./CustomButton.component";
 
 export const Form = () => {
   const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID_HERE || "defaultServiceId";
@@ -34,15 +36,27 @@ export const Form = () => {
       {success ? (
         <h3>Thank you, your message was sent</h3>
       ) : (
-        <form ref={form} onSubmit={sendEmail}>
-          <label>Name</label>
-          <input type="text" name="user_name" />
-          <label>Email</label>
-          <input type="email" name="user_email" />
-          <label>Message</label>
-          <textarea name="message" />
-          <input type="submit" value="Send" />
-        </form>
+        <div className="form-container">
+          <form ref={form} onSubmit={sendEmail} className="form-cotainer-fields">
+            <FormControl className="form-field">
+              <InputLabel htmlFor="name-input">Your name</InputLabel>
+              <Input id="name-input" aria-describedby="name-helper-text" name="user_name" />
+            </FormControl>
+
+            <FormControl className="form-field">
+              <InputLabel htmlFor="email-input">Email address</InputLabel>
+              <Input id="email-input" aria-describedby="email-helper-text" name="user_email" />
+              <FormHelperText id="email-helper-text">I'll never share your email.</FormHelperText>
+            </FormControl>
+
+            <FormControl className="form-field">
+              <TextField id="message-textarea" label="" multiline rows={4} defaultValue="   Your message" variant="standard" name="message" />
+            </FormControl>
+            <CustomButton type="submit" value="Send" className="form-field">
+              Send message
+            </CustomButton>
+          </form>
+        </div>
       )}
     </>
   );
