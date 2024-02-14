@@ -46,7 +46,7 @@ export default function Navigation() {
           </CustomMenuItem>
         ))}
       </CustomMenu>
-      <CustomButton>Contact</CustomButton>
+      <CustomButton onClick={() => navigate("/form")}>Contact</CustomButton>
     </div>
   );
 }

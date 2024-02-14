@@ -1,0 +1,26 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+.form-container {
+  @include container;
+}
+
+.form-cotainer-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form-field {
+  width: 60%;
+}
+
+.css-1eed5fa-MuiInputBase-root-MuiInput-root::after,
+.css-uhyr2s-MuiInputBase-root-MuiInput-root::after {
+  border-bottom: 2px solid $color-dark !important;
+}
+
+.Mui-focused {
+  color: $color-dark !important;
+}

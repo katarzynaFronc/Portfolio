@@ -14,3 +14,17 @@
          + 'Please make sure it is defined in `$breakpoints` map.';
   }
 }
+
+@mixin container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+
+  @include respond-to("large") {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content min-content 10fr;
+    gap: 1rem 2rem;
+    margin: 1rem 2rem;
+  }
+}
