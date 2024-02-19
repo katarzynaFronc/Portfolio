@@ -2,7 +2,8 @@
 @import "../utilities/mixins";
 
 .form-container {
-  @include container;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
 }
 
 .form-cotainer-fields {
@@ -10,6 +11,7 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
 .form-field {

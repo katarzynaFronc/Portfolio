@@ -78,32 +78,34 @@ export const Form = () => {
       {success ? (
         <h3>Thank you, your message was sent</h3>
       ) : (
-        <div className="form-container">
-          <form ref={form} onSubmit={formik.handleSubmit} className="form-cotainer-fields">
-            <h3>Write me a message</h3>
-            <TextField
-              id="standard-basic"
-              label="Your name"
-              variant="standard"
-              name="user_name"
-              className="form-field"
-              value={formik.values.user_name}
-              onChange={formik.handleChange}
-              error={formik.touched.user_name && Boolean(formik.errors.user_name)}
-              helperText={formik.touched.user_name && formik.errors.user_name}
-            />
+        <>
+          <div className="form-container">
+            <form ref={form} onSubmit={formik.handleSubmit} className="form-cotainer-fields">
+              <h3>Or write me a message:</h3>
+              <TextField
+                id="standard-basic"
+                label="Your name"
+                variant="standard"
+                name="user_name"
+                className="form-field"
+                value={formik.values.user_name}
+                onChange={formik.handleChange}
+                error={formik.touched.user_name && Boolean(formik.errors.user_name)}
+                helperText={formik.touched.user_name && formik.errors.user_name}
+              />
 
-            <TextField id="standard-basic" label="email" variant="standard" name="email" className="form-field" value={formik.values.email} onChange={formik.handleChange} error={formik.touched.email && Boolean(formik.errors.email)} helperText={formik.touched.email && formik.errors.email} />
+              <TextField id="standard-basic" label="email" variant="standard" name="email" className="form-field" value={formik.values.email} onChange={formik.handleChange} error={formik.touched.email && Boolean(formik.errors.email)} helperText={formik.touched.email && formik.errors.email} />
 
-            <FormControl className="form-field">
-              <TextField id="message-textarea" label="message" multiline rows={4} variant="standard" name="message" onChange={formik.handleChange} error={Boolean(formik.touched.message && formik.errors.message)} helperText={formik.touched.message && formik.errors.message} />
-            </FormControl>
+              <FormControl className="form-field">
+                <TextField id="message-textarea" label="message" multiline rows={4} variant="standard" name="message" onChange={formik.handleChange} error={Boolean(formik.touched.message && formik.errors.message)} helperText={formik.touched.message && formik.errors.message} />
+              </FormControl>
 
-            <CustomButton type="submit" value="Send" className="form-field">
-              Send message
-            </CustomButton>
-          </form>
-        </div>
+              <CustomButton type="submit" value="Send" className="form-field">
+                Send message
+              </CustomButton>
+            </form>
+          </div>
+        </>
       )}
     </>
   );
