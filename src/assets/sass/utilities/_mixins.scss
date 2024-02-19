@@ -28,3 +28,9 @@
     margin: 1rem 2rem;
   }
 }
+
+@mixin description {
+  font-family: $primary-font;
+  font-size: 0.75rem;
+  padding: 1rem 0;
+}

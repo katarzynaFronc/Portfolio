@@ -1,0 +1,16 @@
+@import "../utilities/mixins";
+
+.about-container {
+  @include container;
+}
+
+.about-stack-image {
+  height: 3rem;
+  width: auto;
+  margin: 0.5rem;
+  transition-delay: 500ms;
+}
+
+.about-description {
+  @include description;
+}

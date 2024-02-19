@@ -29,7 +29,7 @@ export default function Navigation() {
 
   return (
     <div className="menu-container">
-      <CustomButton>About me</CustomButton>
+      <CustomButton onClick={() => navigate("/about")}>About me</CustomButton>
       <CustomButton aria-controls={open ? "basic-menu" : undefined} aria-haspopup="true" aria-expanded={open ? "true" : undefined} onClick={handleClick}>
         Projects
       </CustomButton>

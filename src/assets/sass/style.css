@@ -139,11 +139,11 @@ h3 {
 }
 
 .project-description {
-  grid-column: 1/2;
-  grid-row: 2/4;
   font-family: "Montserrat", sans-serif;
   font-size: 0.75rem;
   padding: 1rem 0;
+  grid-column: 1/2;
+  grid-row: 2/4;
 }
 @media (min-width: 781px) {
   .project-description {
@@ -199,6 +199,44 @@ h3 {
   height: 1.5rem;
   width: auto;
   margin: 0.5rem;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+@media (min-width: 781px) {
+  .about-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content min-content 10fr;
+    gap: 1rem 2rem;
+    margin: 1rem 2rem;
+  }
+}
+
+.about-stack-image {
+  height: 3rem;
+  width: auto;
+  margin: 0.5rem;
+  transition-delay: 500ms;
+}
+
+.about-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  padding: 1rem 0;
+}
+
+.stack-button {
+  background-color: #dadada;
+  border: none;
+}
+
+.stack-button-image {
+  height: 2.5rem;
+  width: auto;
 }
 
 .layout {
