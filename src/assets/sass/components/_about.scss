@@ -1,16 +1,44 @@
 @import "../utilities/mixins";
 
-.about-container {
-  @include container;
-}
+.about {
+  &-container {
+    @include container;
+  }
 
-.about-stack-image {
-  height: 3rem;
-  width: auto;
-  margin: 0.5rem;
-  transition-delay: 500ms;
-}
+  &-stack {
+    &-container {
+      @include respond-to("large") {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+      }
+    }
 
-.about-description {
-  @include description;
+    &-image {
+      height: 3rem;
+      width: auto;
+      margin: 0.5rem;
+    }
+  }
+
+  &-description {
+    &-container {
+      @include respond-to("large") {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+      }
+    }
+    &-content {
+      @include description;
+
+      @include respond-to("large") {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &-link {
+    text-decoration: none;
+    color: $color-dark;
+    font-weight: 600;
+  }
 }

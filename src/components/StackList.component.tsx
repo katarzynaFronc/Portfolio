@@ -1,6 +1,6 @@
 import { stack } from "../api/stackList";
 
-export const StacList = () => {
+export const StackList = () => {
   return (
     <div className="stack-container">
       {stack.map(({ id, icon }) => {

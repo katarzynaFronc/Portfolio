@@ -1,9 +1,11 @@
 .header {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
+  &-container {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
 
-.header-a {
-  text-decoration: none;
-  color: $color-dark;
+  &-link {
+    text-decoration: none;
+    color: $color-dark;
+  }
 }

@@ -36,10 +36,10 @@ export const Project = () => {
       <h3 className="project-name">{project.name}</h3>
       <div className="project-image-container">{project.image && <img src={project.image} alt={project.name} className="project-image" />}</div>
       <div className="project-link-container">
-        <a href={project.webside} className="project-link">
+        <a href={project.webside} className="project-link" target="_blank">
           <CustomButton>Go to App</CustomButton>
         </a>
-        <a href={project.code} className="project-link">
+        <a href={project.code} className="project-link" target="_blank">
           <CustomButton>Go to code</CustomButton>
         </a>
       </div>

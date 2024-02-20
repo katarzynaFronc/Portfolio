@@ -1,12 +1,32 @@
 .stack-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
 }
 
 .stack-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: $primary-color;
   border: none;
+  height: 3rem;
+  width: 3rem;
+  border: 1px solid $color-dark;
+  border-radius: 0.5rem;
+
+  @include respond-to("large") {
+    height: 4rem;
+    width: 4rem;
+  }
 }
 
 .stack-button-image {
   height: 2.5rem;
   width: auto;
+
+  @include respond-to("large") {
+    height: 3rem;
+  }
 }
