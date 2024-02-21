@@ -31,6 +31,10 @@ export const Project = () => {
   const location = useLocation();
   const { project } = location.state || {};
 
+  const formatDescription = (description: string) => {
+    return { __html: description.split("\n").join("<br />") };
+  };
+
   return (
     <div className="project-container">
       <h3 className="project-name">{project.name}</h3>
@@ -43,7 +47,7 @@ export const Project = () => {
           <CustomButton>Go to code</CustomButton>
         </a>
       </div>
-      <p className="project-description">{project.description}</p>
+      <p className="project-description" dangerouslySetInnerHTML={formatDescription(project.description)}></p>
     </div>
   );
 };
