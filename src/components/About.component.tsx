@@ -19,9 +19,9 @@ export const About = () => {
           <br />I constantly develop my skills by participating in trainings, hackathons and writing web applications.
           <br />
           On this site you can get acquainted with my more interesting projects, to which you are cordially invited. If you need a person with my skills to complete your project, please{" "}
-          <div onClick={() => navigate("/contact")} className="about-link">
+          <span onClick={() => navigate("/contact")} className="about-link">
             contact me.
-          </div>
+          </span>
         </p>
       </div>
       <div className="about-stack-container">
