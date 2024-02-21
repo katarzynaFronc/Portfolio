@@ -36,7 +36,6 @@
   }
   &-description {
     @include description;
-    white-space: pre-wrap;
     grid-column: 1 / 2;
     grid-row: 2 /4;
     padding-right: 1rem;

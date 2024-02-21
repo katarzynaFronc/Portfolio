@@ -1,7 +1,9 @@
 import { StackList } from "./StackList.component";
 import image from "../assets/image.png";
+import { useNavigate } from "react-router-dom";
 
 export const About = () => {
+  const navigate = useNavigate();
   return (
     <div className="about-container">
       <div className="about-image-container">
@@ -17,9 +19,9 @@ export const About = () => {
           <br />I constantly develop my skills by participating in trainings, hackathons and writing web applications.
           <br />
           On this site you can get acquainted with my more interesting projects, to which you are cordially invited. If you need a person with my skills to complete your project, please{" "}
-          <a href="/contact" className="about-link">
+          <div onClick={() => navigate("/contact")} className="about-link">
             contact me.
-          </a>
+          </div>
         </p>
       </div>
       <div className="about-stack-container">

@@ -1,10 +1,13 @@
+import { useNavigate } from "react-router-dom";
+import { TypeAnimation } from "react-type-animation";
+
 export const Header = () => {
+  const navigate = useNavigate();
   return (
     <div className="header-container">
-      <a href="/" className="header-link">
-        <h1>FirstName SecondName</h1>
-        <h2>Frontend Developer</h2>
-      </a>
+      <div onClick={() => navigate("/")} className="header-link">
+        <TypeAnimation cursor={false} className="header-text" sequence={[`FirstName SecondName\nFrontend Developer`, 1000]} repeat={0} />
+      </div>
     </div>
   );
 };
