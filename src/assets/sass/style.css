@@ -9,7 +9,7 @@ html,
 body {
   font-family: "Montserrat Subrayada", sans-serif;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   color: #16161d;
   background-color: #cdcdcd;
   overflow: auto;
@@ -288,6 +288,7 @@ br {
   text-decoration: none;
   color: #16161d;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .stack-container {
