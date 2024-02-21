@@ -2,10 +2,21 @@
   &-container {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    display: flex;
+    align-self: start;
   }
 
   &-link {
     text-decoration: none;
     color: $color-header-dark;
+  }
+
+  &-text {
+    font-size: 1.2rem;
+    white-space: pre-line;
+
+    @include respond-to("large") {
+      font-size: 1.625rem;
+    }
   }
 }
