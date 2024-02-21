@@ -1,8 +1,12 @@
 import { StackList } from "./StackList.component";
+import image from "../assets/image.png";
 
 export const About = () => {
   return (
     <div className="about-container">
+      <div className="about-image-container">
+        <img src={image} alt="image" className="about-image" />
+      </div>
       <div className="about-description-container">
         <p className="about-description-content">
           Officially Katarzyna, although my friends call me Kaja.

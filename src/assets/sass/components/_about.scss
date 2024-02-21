@@ -5,11 +5,29 @@
     @include container;
   }
 
+  &-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+
+    &-container {
+      display: flex;
+      justify-content: center;
+      max-height: 50vh;
+      @include respond-to("large") {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+      }
+    }
+  }
+
   &-stack {
     &-container {
       @include respond-to("large") {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        display: flex;
+        justify-content: end;
       }
     }
 
@@ -23,7 +41,7 @@
   &-description {
     &-container {
       @include respond-to("large") {
-        grid-column: 1 / 2;
+        grid-column: 2 / 3;
         grid-row: 1 / 2;
       }
     }
