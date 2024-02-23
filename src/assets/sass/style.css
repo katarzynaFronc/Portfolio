@@ -73,17 +73,27 @@ br {
   grid-row: 1/2;
   display: flex;
   align-self: start;
+  flex-direction: column;
 }
 .header-link {
   text-decoration: none;
   color: #374b78;
 }
 .header-text {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   white-space: pre-line;
 }
 @media (min-width: 781px) {
   .header-text {
+    font-size: 2rem;
+  }
+}
+.header-text-second-line {
+  font-size: 1.2rem;
+  white-space: pre-line;
+}
+@media (min-width: 781px) {
+  .header-text-second-line {
     font-size: 1.625rem;
   }
 }
