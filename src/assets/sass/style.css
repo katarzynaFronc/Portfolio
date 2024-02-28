@@ -82,6 +82,7 @@ br {
 .header-text {
   font-size: 1.4rem;
   white-space: pre-line;
+  cursor: pointer;
 }
 @media (min-width: 781px) {
   .header-text {
@@ -91,6 +92,7 @@ br {
 .header-text-second-line {
   font-size: 1.2rem;
   white-space: pre-line;
+  cursor: pointer;
 }
 @media (min-width: 781px) {
   .header-text-second-line {
