@@ -1,3 +1,10 @@
+import { ParticlesBg } from "../components/ParticlesBg.component";
+
 export const MainPage = () => {
-  return <div className=""></div>;
+  return (
+    <>
+      {" "}
+      <ParticlesBg />
+    </>
+  );
 };
