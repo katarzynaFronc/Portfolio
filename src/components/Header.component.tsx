@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
+import { user } from "../api/user";
 
 export const Header = () => {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ export const Header = () => {
   return (
     <div className="header-container">
       <div onClick={() => navigate("/")} className="header-link">
-        <TypeAnimation cursor={false} className="header-text" sequence={[`FirstName SecondName`, 1000]} repeat={0} />
+        <TypeAnimation cursor={false} className="header-text" sequence={[`${user.firstName} ${user.lastName}`, 1000]} repeat={0} />
       </div>
       {firstAnimationComplete && (
         <div onClick={() => navigate("/")} className="header-link">

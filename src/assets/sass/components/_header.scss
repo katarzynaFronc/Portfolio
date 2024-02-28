@@ -15,6 +15,7 @@
   &-text {
     font-size: 1.4rem;
     white-space: pre-line;
+    cursor: pointer;
 
     @include respond-to("large") {
       font-size: 2rem;
@@ -24,6 +25,7 @@
   &-text-second-line {
     font-size: 1.2rem;
     white-space: pre-line;
+    cursor: pointer;
 
     @include respond-to("large") {
       font-size: 1.625rem;

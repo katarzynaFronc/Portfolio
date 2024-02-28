@@ -82,6 +82,7 @@ br {
 .header-text {
   font-size: 1.4rem;
   white-space: pre-line;
+  cursor: pointer;
 }
 @media (min-width: 781px) {
   .header-text {
@@ -91,6 +92,7 @@ br {
 .header-text-second-line {
   font-size: 1.2rem;
   white-space: pre-line;
+  cursor: pointer;
 }
 @media (min-width: 781px) {
   .header-text-second-line {
@@ -336,21 +338,32 @@ br {
   }
 }
 
+.particles-bg {
+  position: absolute;
+  width: calc(100% - 6rem);
+  height: calc(100vh - 6rem);
+  left: 3rem;
+  top: 3rem;
+  z-index: 0;
+}
+
 .layout {
   display: grid;
   grid-template-columns: 90% 10%;
-  grid-template-rows: 6rem auto 6rem;
+  grid-template-rows: 4rem auto 6rem;
   background-color: #dadada;
   margin: 3rem;
   padding: 1rem 0.2rem 1rem 1rem;
-  min-height: 85vh;
+  min-height: calc(100vh - 6rem);
   box-shadow: 5px 5px 15px 5px #c0c0c0;
   align-items: center;
   border-radius: 0.5rem;
+  z-index: -1;
 }
 @media (min-width: 781px) {
   .layout {
     grid-template-columns: 95% 5%;
+    grid-template-rows: 6rem auto 6rem;
   }
 }
 
