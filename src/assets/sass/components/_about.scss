@@ -47,10 +47,6 @@
     }
     &-content {
       @include description;
-
-      @include respond-to("large") {
-        font-size: 1rem;
-      }
     }
   }
 

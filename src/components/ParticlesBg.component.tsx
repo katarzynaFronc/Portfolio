@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
-import { Container, ISourceOptions } from "@tsparticles/engine";
+import { ISourceOptions } from "@tsparticles/engine";
 
 export const ParticlesBg = () => {
   const [init, setInit] = useState(false);
@@ -13,10 +13,6 @@ export const ParticlesBg = () => {
       setInit(true);
     });
   }, []);
-
-  const particlesLoaded = async (container?: Container): Promise<void> => {
-    console.log(container);
-  };
 
   const options: ISourceOptions = useMemo(
     () => ({
@@ -64,14 +60,14 @@ export const ParticlesBg = () => {
             default: "bounce",
           },
           random: false,
-          speed: 2,
+          speed: 1,
           straight: false,
         },
         number: {
           density: {
             enable: true,
           },
-          value: 120,
+          value: 180,
         },
         opacity: {
           value: 0.5,
@@ -89,7 +85,7 @@ export const ParticlesBg = () => {
   );
 
   if (init) {
-    return <Particles id="tsparticles" particlesLoaded={particlesLoaded} options={options} className="particles-bg" />;
+    return <Particles id="tsparticles" options={options} className="particles-bg" />;
   }
 
   return <></>;

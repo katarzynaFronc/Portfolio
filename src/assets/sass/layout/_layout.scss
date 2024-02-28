@@ -5,17 +5,19 @@
   grid-template-columns: 90% 10%;
   grid-template-rows: 4rem auto 6rem;
   background-color: $primary-color;
-  margin: 3rem;
+  margin: 2rem;
   padding: 1rem 0.2rem 1rem 1rem;
-  min-height: calc(100vh - 6rem);
+  min-height: calc(100vh - 4rem);
   box-shadow: 5px 5px 15px 5px $tetriary-color;
   align-items: center;
   border-radius: 0.5rem;
   z-index: -1;
 
   @include respond-to("large") {
+    margin: 3rem;
     grid-template-columns: 95% 5%;
     grid-template-rows: 6rem auto 6rem;
+    min-height: calc(100vh - 6rem);
   }
 }
 

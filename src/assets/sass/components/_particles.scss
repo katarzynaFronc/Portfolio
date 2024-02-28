@@ -2,9 +2,16 @@
 
 .particles-bg {
   position: absolute;
-  width: calc(100% - 6rem);
-  height: calc(100vh - 6rem);
-  left: 3rem;
-  top: 3rem;
+  width: calc(100% - 4rem);
+  height: calc(100vh - 4rem);
+  left: 2rem;
+  top: 2rem;
   z-index: 0;
+
+  @include respond-to("large") {
+    width: calc(100% - 6rem);
+    height: calc(100vh - 6rem);
+    left: 3rem;
+    top: 3rem;
+  }
 }

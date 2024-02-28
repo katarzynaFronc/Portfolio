@@ -174,13 +174,18 @@ br {
   font-family: "Montserrat", sans-serif;
   font-size: 0.75rem;
   padding: 1rem 0;
+  line-height: 1.25em;
   grid-column: 1/2;
   grid-row: 2/4;
   padding-right: 1rem;
 }
 @media (min-width: 781px) {
   .project-description {
-    font-size: 1rem;
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 781px) {
+  .project-description {
     padding-right: 3rem;
     padding-top: 0;
   }
@@ -290,10 +295,11 @@ br {
   font-family: "Montserrat", sans-serif;
   font-size: 0.75rem;
   padding: 1rem 0;
+  line-height: 1.25em;
 }
 @media (min-width: 781px) {
   .about-description-content {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
 }
 .about-link {
@@ -340,11 +346,19 @@ br {
 
 .particles-bg {
   position: absolute;
-  width: calc(100% - 6rem);
-  height: calc(100vh - 6rem);
-  left: 3rem;
-  top: 3rem;
+  width: calc(100% - 4rem);
+  height: calc(100vh - 4rem);
+  left: 2rem;
+  top: 2rem;
   z-index: 0;
+}
+@media (min-width: 781px) {
+  .particles-bg {
+    width: calc(100% - 6rem);
+    height: calc(100vh - 6rem);
+    left: 3rem;
+    top: 3rem;
+  }
 }
 
 .layout {
@@ -352,9 +366,9 @@ br {
   grid-template-columns: 90% 10%;
   grid-template-rows: 4rem auto 6rem;
   background-color: #dadada;
-  margin: 3rem;
+  margin: 2rem;
   padding: 1rem 0.2rem 1rem 1rem;
-  min-height: calc(100vh - 6rem);
+  min-height: calc(100vh - 4rem);
   box-shadow: 5px 5px 15px 5px #c0c0c0;
   align-items: center;
   border-radius: 0.5rem;
@@ -362,8 +376,10 @@ br {
 }
 @media (min-width: 781px) {
   .layout {
+    margin: 3rem;
     grid-template-columns: 95% 5%;
     grid-template-rows: 6rem auto 6rem;
+    min-height: calc(100vh - 6rem);
   }
 }
 
