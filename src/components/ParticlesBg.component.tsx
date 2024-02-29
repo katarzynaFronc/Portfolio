@@ -67,7 +67,7 @@ export const ParticlesBg = () => {
           density: {
             enable: true,
           },
-          value: 180,
+          value: 200,
         },
         opacity: {
           value: 0.5,

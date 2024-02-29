@@ -11,7 +11,7 @@ body {
   width: 100%;
   min-height: 100%;
   color: #16161d;
-  background-color: #cdcdcd;
+  background-color: #9cb1ce;
   overflow: auto;
 }
 
@@ -112,14 +112,14 @@ br {
 .menu-button {
   color: #16161d;
   border: none;
-  background-color: #dadada;
+  background-color: #ebebeb;
   text-align: left;
   cursor: pointer;
 }
 
 .MuiMenu-list {
   color: #16161d;
-  background-color: #dadada;
+  background-color: #ebebeb;
   font-size: 0.5rem;
 }
 
@@ -160,8 +160,8 @@ br {
   grid-row: 1/3;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
-  background-color: #c0c0c0;
-  box-shadow: 5px 5px 15px 5px #c0c0c0;
+  background-color: #374b78;
+  box-shadow: 5px 5px 15px 5px #374b78;
 }
 .project-link-container {
   grid-column: 2/3;
@@ -174,7 +174,7 @@ br {
   font-family: "Montserrat", sans-serif;
   font-size: 0.75rem;
   padding: 1rem 0;
-  line-height: 1.25em;
+  line-height: 1.2em;
   grid-column: 1/2;
   grid-row: 2/4;
   padding-right: 1rem;
@@ -295,7 +295,7 @@ br {
   font-family: "Montserrat", sans-serif;
   font-size: 0.75rem;
   padding: 1rem 0;
-  line-height: 1.25em;
+  line-height: 1.2em;
 }
 @media (min-width: 781px) {
   .about-description-content {
@@ -320,7 +320,7 @@ br {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #dadada;
+  background-color: #ebebeb;
   border: none;
   height: 3rem;
   width: 3rem;
@@ -365,11 +365,11 @@ br {
   display: grid;
   grid-template-columns: 90% 10%;
   grid-template-rows: 4rem auto 6rem;
-  background-color: #dadada;
+  background-color: #ebebeb;
   margin: 2rem;
   padding: 1rem 0.2rem 1rem 1rem;
   min-height: calc(100vh - 4rem);
-  box-shadow: 5px 5px 15px 5px #c0c0c0;
+  box-shadow: 5px 5px 15px 5px #374b78;
   align-items: center;
   border-radius: 0.5rem;
   z-index: -1;

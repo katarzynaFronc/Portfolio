@@ -33,7 +33,7 @@
   font-family: $primary-font;
   font-size: 0.75rem;
   padding: 1rem 0;
-  line-height: 1.25em;
+  line-height: 1.2em;
   @include respond-to("large") {
     font-size: 0.875rem;
   }
