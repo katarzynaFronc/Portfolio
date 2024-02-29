@@ -6,14 +6,29 @@ import { user } from "../api/user";
 export const Header = () => {
   const navigate = useNavigate();
   const [firstAnimationComplete, setFirstAnimationComplete] = useState(false);
+  const [isDelayed, setIsDelayed] = useState(false);
 
   useEffect(() => {
-    const firstAnimationDuration = 1600;
-    const timer = setTimeout(() => {
+    const firstAnimationDuration = 2600;
+    const delayDuration = 1000;
+
+    const delayTimer = setTimeout(() => {
+      setIsDelayed(true);
+    }, delayDuration);
+
+    const animationTimer = setTimeout(() => {
       setFirstAnimationComplete(true);
     }, firstAnimationDuration);
-    return () => clearTimeout(timer);
+
+    return () => {
+      clearTimeout(delayTimer);
+      clearTimeout(animationTimer);
+    };
   }, []);
+
+  if (!isDelayed) {
+    return null;
+  }
 
   return (
     <div className="header-container">
