@@ -9,8 +9,8 @@ export const Header = () => {
   const [isDelayed, setIsDelayed] = useState(false);
 
   useEffect(() => {
-    const firstAnimationDuration = 2600;
-    const delayDuration = 1000;
+    const firstAnimationDuration = 3600;
+    const delayDuration = 2000;
 
     const delayTimer = setTimeout(() => {
       setIsDelayed(true);
