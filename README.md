@@ -1,3 +1,5 @@
+work in progress
+
 # Portfolio
 
 ![portfolioKF](https://github.com/katarzynaFronc/Portfolio/assets/111447530/844c2358-7c7b-4e00-b5c2-775021f11406)
