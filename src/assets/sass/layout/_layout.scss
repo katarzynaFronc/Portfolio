@@ -19,6 +19,10 @@
     grid-template-rows: 6rem auto 6rem;
     min-height: calc(100vh - 6rem);
   }
+
+  @include respond-to("huge") {
+    margin: 3rem 8rem;
+  }
 }
 
 .children {
