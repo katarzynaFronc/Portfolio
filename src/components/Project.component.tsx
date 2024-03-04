@@ -38,7 +38,12 @@ export const Project = () => {
   return (
     <div className="project-container">
       <h3 className="project-name">{project.name}</h3>
-      <div className="project-image-container">{project.image && <img src={project.image} alt={project.name} className="project-image" />}</div>
+      {project.image && (
+        <div className="project-image-container" style={{ backgroundImage: `url(${project.image})` }}>
+          {/* {project.image && 
+        <img src={project.image} alt={project.name} className="project-image" />} */}
+        </div>
+      )}
       <div className="project-link-container">
         <a href={project.webside} className="project-link" target="_blank">
           <CustomButton>Go to App</CustomButton>
