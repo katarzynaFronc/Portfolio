@@ -16,13 +16,9 @@
     gap: 1rem;
 
     &-button {
-      display: flex;
       background-size: 100%;
       background-position: center;
       background-repeat: no-repeat;
-      height: 2rem;
-      width: 7rem;
-      border: none;
       cursor: pointer;
     }
   }
