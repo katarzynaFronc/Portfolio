@@ -1,0 +1,37 @@
+.canva {
+  //   height: calc(100vh - 4rem);
+  //   width: calc(100vw - 4rem);
+  //   margin: 0;
+
+  //   @include respond-to("large") {
+  //     margin: 3rem;
+  //   }
+
+  //   @include respond-to("huge") {
+  //     height: calc(100vh - 6rem);
+  //     width: calc(100vw - 16rem);
+  //   }
+
+  position: absolute;
+  width: calc(100% - 4rem);
+  height: calc(100vh - 4rem);
+  left: 2rem;
+  top: 2rem;
+  z-index: 0;
+  border-radius: 0.5rem;
+  align-self: center;
+
+  @include respond-to("large") {
+    width: calc(100% - 6rem);
+    height: calc(100vh - 6rem);
+    left: 3rem;
+    top: 3rem;
+  }
+
+  @include respond-to("huge") {
+    width: calc(100% - 16rem);
+    height: calc(100vh - 6rem);
+    left: 8rem;
+    top: 3rem;
+  }
+}
