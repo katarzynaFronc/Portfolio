@@ -236,13 +236,9 @@ br {
   gap: 1rem;
 }
 .contact-container-links-button {
-  display: flex;
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  height: 2rem;
-  width: 7rem;
-  border: none;
   cursor: pointer;
 }
 
@@ -342,23 +338,6 @@ br {
   max-height: 100%;
   width: auto;
   height: auto;
-}
-
-.particles-bg {
-  position: absolute;
-  width: calc(100% - 4rem);
-  height: calc(100vh - 4rem);
-  left: 2rem;
-  top: 2rem;
-  z-index: 0;
-}
-@media (min-width: 781px) {
-  .particles-bg {
-    width: calc(100% - 6rem);
-    height: calc(100vh - 6rem);
-    left: 3rem;
-    top: 3rem;
-  }
 }
 
 .canva {
