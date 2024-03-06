@@ -100,7 +100,7 @@ export const Form = () => {
                 <TextField id="message-textarea" label="message" multiline rows={4} variant="standard" name="message" onChange={formik.handleChange} error={Boolean(formik.touched.message && formik.errors.message)} helperText={formik.touched.message && formik.errors.message} />
               </FormControl>
 
-              <CustomButton type="submit" value="Send" className="form-field">
+              <CustomButton type="submit" value="Send" className="form-field-button">
                 Send message
               </CustomButton>
             </form>

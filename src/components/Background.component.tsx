@@ -73,12 +73,12 @@ export const AnimatedBackground: React.FC = () => {
       mousePosition.current = { x: event.clientX, y: event.clientY };
     };
 
-    canvas.addEventListener("pointermove", handleMouseMove);
+    canvas.addEventListener("mousemove", handleMouseMove);
 
     animate();
 
     return () => {
-      canvas.removeEventListener("pointermove", handleMouseMove);
+      canvas.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
 

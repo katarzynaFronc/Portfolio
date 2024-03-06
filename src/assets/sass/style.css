@@ -79,6 +79,8 @@ br {
 .header-link {
   text-decoration: none;
   color: #374b78;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 .header-text {
   font-size: 1.4rem;
@@ -208,6 +210,10 @@ br {
 .form-field {
   width: 60%;
 }
+.form-field-button {
+  width: 60%;
+  text-align: center;
+}
 
 .css-1eed5fa-MuiInputBase-root-MuiInput-root::after,
 .css-uhyr2s-MuiInputBase-root-MuiInput-root::after {
@@ -236,7 +242,7 @@ br {
   gap: 1rem;
 }
 .contact-container-links-button {
-  background-size: 100%;
+  background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;

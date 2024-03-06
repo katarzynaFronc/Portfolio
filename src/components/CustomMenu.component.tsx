@@ -6,6 +6,10 @@ export const CustomMenuItem = styled(MenuItem)<MenuItemProps>(() => ({
   paddingBottom: "0",
   minHeight: "1.5rem",
   fontSize: "0.875rem",
+
+  "&:hover": {
+    backgroundColor: "#9cb1ce",
+  },
 }));
 
 export const CustomMenu = styled(Menu)<MenuProps>(() => ({
