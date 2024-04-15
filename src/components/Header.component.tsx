@@ -22,11 +22,15 @@ export const Header = () => {
   return (
     <div className="header-container">
       <div className="header-link" onClick={() => navigate("/")}>
-        <TypeAnimation cursor={false} className="header-text" sequence={[`${user.firstName} ${user.lastName}`, 1000]} repeat={0} />
+        <h1>
+          <TypeAnimation cursor={false} className="header-text" sequence={[`${user.firstName} ${user.lastName}`, 1000]} repeat={0} />
+        </h1>
       </div>
       {firstAnimationComplete && (
         <div className="header-link" onClick={() => navigate("/")}>
-          <TypeAnimation cursor={false} className="header-text-second-line" sequence={[`Frontend Developer`, 1000]} repeat={0} />
+          <h2>
+            <TypeAnimation cursor={false} className="header-text-second-line" sequence={[`Frontend Developer`, 1000]} repeat={0} />
+          </h2>
         </div>
       )}
     </div>
