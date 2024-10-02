@@ -7,6 +7,8 @@ import scIcon from "../assets/logo/styledComponents.png";
 import gitIcon from "../assets/logo/Git-Icon-Black.png";
 import cssIcon from "../assets/logo/css.png";
 import viteIcon from "../assets/logo/vite.png";
+import bubbleIcon from "../assets/logo/bubbleBlanc.png";
+import ferrytIcon from "../assets/logo/ferryt2.png";
 
 export const stack = [
   {
@@ -53,5 +55,15 @@ export const stack = [
     id: 9,
     name: "Sanity Studio",
     icon: sanityIcon,
+  },
+  {
+    id: 9,
+    name: "Bubble",
+    icon: bubbleIcon,
+  },
+  {
+    id: 9,
+    name: "Ferryt",
+    icon: ferrytIcon,
   },
 ];

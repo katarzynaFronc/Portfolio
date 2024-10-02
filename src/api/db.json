@@ -17,6 +17,14 @@
   },
   {
     "id": 3,
+    "name": "LeafLoveApp",
+    "image": "/preview/leafLove.jpg",
+    "webside": "https://leaflove-34762.bubbleapps.io/version-test",
+    "code": "",
+    "description": "This app I made on Heart4Hack hackathone."
+  },
+  {
+    "id": 4,
     "name": "RentMe",
     "image": "/preview/rentMe.jpg",
     "webside": "https://rent-me.netlify.app/",
@@ -24,7 +32,7 @@
     "description": "RentMe is an app that my team and I wrote at the end of the course. By sharing everyday items with other users in the neighborhood, it helps you fulfill your needs without spending money.\nWe used the React library and TypeScript to write the app. For styling, we used styled-components. As a backend, we used Firebase to store products, app reviews and create a user account.\nIn the project I was responsible for the implementation:\n- basic functions of adding products to the database and downloading them\n- Input components and basic styles for Button components using styled-components\n- routing\n- dark mode\n- RWD - responsiveness of the website\n- styling of selected subpages"
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "Kfaf-fotografia",
     "image": "/preview/kfafFotografia.jpg",
     "webside": "https://kfaf-fotografia.netlify.app/",

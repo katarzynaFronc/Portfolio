@@ -17,8 +17,10 @@ export const About = () => {
           <br />I dreamed of writing code since elementary school, but life decided otherwise and for many years my path veered away from programming.
           <br />I briefly returned to coding in 2010, when I needed to create a website for my own photography business (KFAF-fotografia). Then there was a separation again, until I decided to do professionally what I had always enjoyed.
           <br />
-          In 2023, I completed a 9-month course and was certified as a Junior Frontend Developer. Since then, writing code has become my daily routine.
-          <br />I constantly develop my skills by participating in trainings, hackathons and writing web applications.
+          In 2023, I completed the course and was certified as a Junior Frontend Developer.
+          <br />
+          In my daily work I use the low-code platform to develop solutions for business. Complemented with JavaScript, C# and SQL I create complete frontend and backend projects.
+          <br />I also constantly develop my skills by participating in trainings, hackathons and writing web applications.
           <br />
           On this site you can get acquainted with my projects, to which you are cordially invited. If you need a person with my skills for your project, please{" "}
           <span onClick={() => navigate("/contact")} className="about-link">
