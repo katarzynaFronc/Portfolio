@@ -5,6 +5,7 @@ import { MainPage } from "./pages/MainPage";
 import { ProjectPage } from "./pages/ProjectPage";
 import { ContactPage } from "./pages/ContactPage";
 import { AboutPage } from "./pages/AboutPage";
+import { NoCode } from "./components/NoCode.component";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/projectPage/:id" element={<ProjectPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/nocode" element={<NoCode />} />
         </Routes>
       </Layout>
     </>
